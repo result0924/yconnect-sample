@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Qlo-ZD-KCZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--YConnect Login by Safari-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="center" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7P-0B-hRF" userLabel="Login Button">
+                                <rect key="frame" x="47.5" y="308.5" width="280" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ldi-X6-NRW"/>
+                                    <constraint firstAttribute="width" constant="280" id="pXL-Ah-Cli"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
+                                <state key="normal" title="ログイン">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ASI-nx-MBI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="a7P-0B-hRF" secondAttribute="centerY" id="7EF-xz-Euk"/>
+                            <constraint firstAttribute="centerX" secondItem="a7P-0B-hRF" secondAttribute="centerX" id="YdP-dc-SxT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="YConnect Login by Safari" id="40P-Mc-eTi"/>
+                    <connections>
+                        <segue destination="lZd-Dl-ulh" kind="show" identifier="ToResultPage" id="AdH-Di-fF7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="136"/>
+        </scene>
+        <!--This is a logined page.-->
+        <scene sceneID="0W0-fm-exF">
+            <objects>
+                <viewController id="lZd-Dl-ulh" customClass="ResultViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kMA-bT-abI"/>
+                        <viewControllerLayoutGuide type="bottom" id="yQm-Ig-EcU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GcP-bm-JfI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, YConnect!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXw-1A-s3J">
+                                <rect key="frame" x="102" y="180" width="170" height="20"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="（guid）" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUi-xU-Dk5">
+                                <rect key="frame" x="16" y="334" width="343" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.98199761611780034" blue="0.89173135327427144" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="jbO-10-GDf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="（エラー）" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVO-QS-jbL">
+                                <rect key="frame" x="16" y="484" width="343" height="100"/>
+                                <color key="backgroundColor" red="0.7796280888401077" green="1" blue="0.94031653927337744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="J46-Rd-ded"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Tq-gt-nkP">
+                                <rect key="frame" x="139" y="280" width="97" height="30"/>
+                                <state key="normal" title="fetch Userinfo"/>
+                                <connections>
+                                    <action selector="fetchUserinfo:" destination="lZd-Dl-ulh" eventType="touchUpInside" id="now-5b-KYV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RVO-QS-jbL" firstAttribute="top" secondItem="OUi-xU-Dk5" secondAttribute="bottom" constant="50" id="AH6-1T-4yh"/>
+                            <constraint firstItem="yQm-Ig-EcU" firstAttribute="top" secondItem="RVO-QS-jbL" secondAttribute="bottom" constant="83" id="Et1-yG-gQN"/>
+                            <constraint firstItem="OUi-xU-Dk5" firstAttribute="leading" secondItem="GcP-bm-JfI" secondAttribute="leadingMargin" id="MP9-OB-iqb"/>
+                            <constraint firstItem="RVO-QS-jbL" firstAttribute="leading" secondItem="GcP-bm-JfI" secondAttribute="leadingMargin" id="NlU-1b-sJF"/>
+                            <constraint firstItem="OUi-xU-Dk5" firstAttribute="trailing" secondItem="GcP-bm-JfI" secondAttribute="trailingMargin" id="SVX-gX-AlQ"/>
+                            <constraint firstItem="8Tq-gt-nkP" firstAttribute="centerX" secondItem="GcP-bm-JfI" secondAttribute="centerX" id="XMp-JF-14s"/>
+                            <constraint firstItem="8Tq-gt-nkP" firstAttribute="top" secondItem="iXw-1A-s3J" secondAttribute="bottom" constant="80" id="b1Y-Ot-twc"/>
+                            <constraint firstAttribute="centerX" secondItem="iXw-1A-s3J" secondAttribute="centerX" id="kdR-rV-R3M"/>
+                            <constraint firstItem="RVO-QS-jbL" firstAttribute="trailing" secondItem="GcP-bm-JfI" secondAttribute="trailingMargin" id="vPa-pZ-XNL"/>
+                            <constraint firstAttribute="centerY" secondItem="iXw-1A-s3J" secondAttribute="centerY" constant="143.5" id="xCF-a3-eps"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="This is a logined page." id="ErY-3B-b9f"/>
+                    <connections>
+                        <outlet property="error" destination="RVO-QS-jbL" id="HdX-6B-sT9"/>
+                        <outlet property="userid" destination="OUi-xU-Dk5" id="D6V-aI-V3Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PRb-oP-kMQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1716" y="135.38230884557723"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0Ii-16-2Wd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qlo-ZD-KCZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IdX-ez-5Yd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="r5x-Rr-uJb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GW7-sJ-4JV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39" y="136"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,838 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1304D85F176752EE00B50D25 /* YConnectUserInfoClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 1304D85B176752EE00B50D25 /* YConnectUserInfoClient.h */; };
+		1304D860176752EE00B50D25 /* YConnectUserInfoClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1304D85C176752EE00B50D25 /* YConnectUserInfoClient.m */; };
+		1304D8711767531A00B50D25 /* YConnectTokenClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 1304D8671767531A00B50D25 /* YConnectTokenClient.h */; };
+		1304D8721767531A00B50D25 /* YConnectTokenClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1304D8681767531A00B50D25 /* YConnectTokenClient.m */; };
+		1349A45118FE96D300DD0A6D /* YConnectError.h in Headers */ = {isa = PBXBuildFile; fileRef = 1349A44F18FE96D300DD0A6D /* YConnectError.h */; };
+		1349A45218FE96D300DD0A6D /* YConnectError.m in Sources */ = {isa = PBXBuildFile; fileRef = 1349A45018FE96D300DD0A6D /* YConnectError.m */; };
+		136A35FE1798322700E4CB23 /* YConnectUserInfoObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 136A35FD1798322700E4CB23 /* YConnectUserInfoObjectTest.m */; };
+		136A36051798324100E4CB23 /* YConnectUserInfoClientTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 136A36041798324100E4CB23 /* YConnectUserInfoClientTest.m */; };
+		137DC3141999AA50002AC9D8 /* YConnectManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DC3131999AA50002AC9D8 /* YConnectManagerTest.m */; };
+		13817BC71990E52B0046F57D /* YConnectStringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 13817BC41990E52B0046F57D /* YConnectStringUtil.h */; };
+		13817BC81990E52B0046F57D /* YConnectStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 13817BC51990E52B0046F57D /* YConnectStringUtil.m */; };
+		13817BCD1990E5580046F57D /* YConnectStringUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 13817BCB1990E5580046F57D /* YConnectStringUtilTest.m */; };
+		13817BD61990E5950046F57D /* YConnectHttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 13817BD01990E5950046F57D /* YConnectHttpClient.h */; };
+		13817BD71990E5950046F57D /* YConnectHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 13817BD11990E5950046F57D /* YConnectHttpClient.m */; };
+		13817BD81990E5950046F57D /* YConnectHttpHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 13817BD21990E5950046F57D /* YConnectHttpHeaders.h */; };
+		13817BD91990E5950046F57D /* YConnectHttpHeaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 13817BD31990E5950046F57D /* YConnectHttpHeaders.m */; };
+		13817BDA1990E5950046F57D /* YConnectHttpParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 13817BD41990E5950046F57D /* YConnectHttpParameters.h */; };
+		13817BDB1990E5950046F57D /* YConnectHttpParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 13817BD51990E5950046F57D /* YConnectHttpParameters.m */; };
+		13817BE51990E5B00046F57D /* YConnectHttpClientTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 13817BE01990E5B00046F57D /* YConnectHttpClientTest.m */; };
+		13817BE61990E5B00046F57D /* YConnectHttpHeadersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 13817BE21990E5B00046F57D /* YConnectHttpHeadersTest.m */; };
+		13817BE71990E5B00046F57D /* YConnectHttpParametersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 13817BE41990E5B00046F57D /* YConnectHttpParametersTest.m */; };
+		139A4A7719B4866300017E3D /* token_endpoint_refresh_success.json in Resources */ = {isa = PBXBuildFile; fileRef = 139A4A7619B4866300017E3D /* token_endpoint_refresh_success.json */; };
+		139A4A7919B48AC800017E3D /* userinfo_endpoint_success.json in Resources */ = {isa = PBXBuildFile; fileRef = 139A4A7819B48AC800017E3D /* userinfo_endpoint_success.json */; };
+		139CDA611768AF5F0054D3C1 /* YConnectUserInfoObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 139CDA5F1768AF5F0054D3C1 /* YConnectUserInfoObject.h */; };
+		139CDA621768AF5F0054D3C1 /* YConnectUserInfoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 139CDA601768AF5F0054D3C1 /* YConnectUserInfoObject.m */; };
+		13D5687A1994EFF10038BFBD /* YConnectManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D568781994EFF10038BFBD /* YConnectManager.h */; };
+		13D5687B1994EFF10038BFBD /* YConnectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D568791994EFF10038BFBD /* YConnectManager.m */; };
+		13D61D1019933FB700B3B908 /* YConnectConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D61D0E19933FB700B3B908 /* YConnectConfig.h */; };
+		13D61D1119933FB700B3B908 /* YConnectConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D61D0F19933FB700B3B908 /* YConnectConfig.m */; };
+		13D61D231993883900B3B908 /* YConnectTokenClientTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D61D221993883900B3B908 /* YConnectTokenClientTest.m */; };
+		13E6B1B119013DA3000AF8B3 /* YConnectErrorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E6B1B019013DA3000AF8B3 /* YConnectErrorTest.m */; };
+		13F2338E19B457C300AD0868 /* stub.json in Resources */ = {isa = PBXBuildFile; fileRef = 13F2338D19B457C300AD0868 /* stub.json */; };
+		13F2339219B480C300AD0868 /* token_endpoint_success.json in Resources */ = {isa = PBXBuildFile; fileRef = 13F2339119B480C300AD0868 /* token_endpoint_success.json */; };
+		13F2339419B4838700AD0868 /* token_endpoint_error.json in Resources */ = {isa = PBXBuildFile; fileRef = 13F2339319B4838700AD0868 /* token_endpoint_error.json */; };
+		13F81BD418E0251900C7AEBC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13F81BD318E0251900C7AEBC /* XCTest.framework */; };
+		83DD0135FCC646C89D031F6A /* libPods-YConnectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF873D1D88C4AE69B4B8E34 /* libPods-YConnectTests.a */; };
+		EC6E60451B9EEE12007246B1 /* YConnectLog.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6E60441B9EEE12007246B1 /* YConnectLog.m */; };
+		F0DB22BF165368D10058A139 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DB22BE165368D10058A139 /* Foundation.framework */; };
+		F0DB22D5165368F20058A139 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DB22D4165368F20058A139 /* UIKit.framework */; };
+		F0DB22D6165368F20058A139 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DB22BE165368D10058A139 /* Foundation.framework */; };
+		F0DB22DC165368F20058A139 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0DB22DA165368F20058A139 /* InfoPlist.strings */; };
+		F0DB2316165369560058A139 /* YConnectAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DB22E6165369560058A139 /* YConnectAPIClient.m */; };
+		F0DB2320165369560058A139 /* YConnectAuthorizationCallBackUriParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DB22F2165369560058A139 /* YConnectAuthorizationCallBackUriParser.m */; };
+		F0DB2326165369560058A139 /* YConnectBearerToken.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DB22F8165369560058A139 /* YConnectBearerToken.m */; };
+		F0DB2330165369560058A139 /* YConnectCheckIdClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DB2303165369560058A139 /* YConnectCheckIdClient.m */; };
+		F0DB2336165369560058A139 /* YConnectIdTokenObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DB2309165369560058A139 /* YConnectIdTokenObject.m */; };
+		F0DB237A16536A070058A139 /* YConnectAPIClientTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DB235A16536A070058A139 /* YConnectAPIClientTest.m */; };
+		F0DB237E16536A070058A139 /* YConnectAuthorizationCallBackUriParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DB236416536A070058A139 /* YConnectAuthorizationCallBackUriParserTest.m */; };
+		F0DB238116536A070058A139 /* YConnectBearerTokenTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DB236A16536A070058A139 /* YConnectBearerTokenTest.m */; };
+		F0DB242F16536F2A0058A139 /* YConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = F0DB22C3165368D10058A139 /* YConnect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0DB243016536F310058A139 /* YConnectCheckIdClient.h in Headers */ = {isa = PBXBuildFile; fileRef = F0DB2302165369560058A139 /* YConnectCheckIdClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0DB243216536F430058A139 /* YConnectAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = F0DB22E5165369560058A139 /* YConnectAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0DB243716536F610058A139 /* YConnectAuthorizationCallBackUriParser.h in Headers */ = {isa = PBXBuildFile; fileRef = F0DB22F1165369560058A139 /* YConnectAuthorizationCallBackUriParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0DB243A16536F610058A139 /* YConnectBearerToken.h in Headers */ = {isa = PBXBuildFile; fileRef = F0DB22F7165369560058A139 /* YConnectBearerToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0DB244016536F610058A139 /* YConnectIdTokenObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F0DB2308165369560058A139 /* YConnectIdTokenObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0DB24541653700E0058A139 /* YConnectCheckIdClientTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DB24471653700E0058A139 /* YConnectCheckIdClientTest.m */; };
+		F0DB24571653700E0058A139 /* YConnectIdTokenObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DB244D1653700E0058A139 /* YConnectIdTokenObjectTest.m */; };
+		F0DB253B165384EB0058A139 /* libYConnect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DB22BB165368D10058A139 /* libYConnect.a */; };
+		F0F46A731659F1B100C07E0D /* YConnect.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F0DB22C3165368D10058A139 /* YConnect.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0DB253116537F8F0058A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0DB22B2165368D10058A139 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0DB22BA165368D10058A139;
+			remoteInfo = YConnect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F0DB22B9165368D10058A139 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				F0F46A731659F1B100C07E0D /* YConnect.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1304D85B176752EE00B50D25 /* YConnectUserInfoClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectUserInfoClient.h; sourceTree = "<group>"; };
+		1304D85C176752EE00B50D25 /* YConnectUserInfoClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectUserInfoClient.m; sourceTree = "<group>"; };
+		1304D8671767531A00B50D25 /* YConnectTokenClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectTokenClient.h; sourceTree = "<group>"; };
+		1304D8681767531A00B50D25 /* YConnectTokenClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectTokenClient.m; sourceTree = "<group>"; };
+		1317A1DC1A2CAB7800BD14F8 /* YConnectLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YConnectLog.h; sourceTree = "<group>"; };
+		133E820817995C0300EB28BD /* YConnectTokenClientTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectTokenClientTest.h; sourceTree = "<group>"; };
+		1349A44F18FE96D300DD0A6D /* YConnectError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectError.h; sourceTree = "<group>"; };
+		1349A45018FE96D300DD0A6D /* YConnectError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectError.m; sourceTree = "<group>"; };
+		136A35FC1798322700E4CB23 /* YConnectUserInfoObjectTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectUserInfoObjectTest.h; sourceTree = "<group>"; };
+		136A35FD1798322700E4CB23 /* YConnectUserInfoObjectTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectUserInfoObjectTest.m; sourceTree = "<group>"; };
+		136A36031798324100E4CB23 /* YConnectUserInfoClientTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectUserInfoClientTest.h; sourceTree = "<group>"; };
+		136A36041798324100E4CB23 /* YConnectUserInfoClientTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectUserInfoClientTest.m; sourceTree = "<group>"; };
+		137DC3131999AA50002AC9D8 /* YConnectManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectManagerTest.m; sourceTree = "<group>"; };
+		13817BC41990E52B0046F57D /* YConnectStringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectStringUtil.h; sourceTree = "<group>"; };
+		13817BC51990E52B0046F57D /* YConnectStringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectStringUtil.m; sourceTree = "<group>"; };
+		13817BCA1990E5580046F57D /* YConnectStringUtilTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectStringUtilTest.h; sourceTree = "<group>"; };
+		13817BCB1990E5580046F57D /* YConnectStringUtilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectStringUtilTest.m; sourceTree = "<group>"; };
+		13817BD01990E5950046F57D /* YConnectHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectHttpClient.h; sourceTree = "<group>"; };
+		13817BD11990E5950046F57D /* YConnectHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectHttpClient.m; sourceTree = "<group>"; };
+		13817BD21990E5950046F57D /* YConnectHttpHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectHttpHeaders.h; sourceTree = "<group>"; };
+		13817BD31990E5950046F57D /* YConnectHttpHeaders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectHttpHeaders.m; sourceTree = "<group>"; };
+		13817BD41990E5950046F57D /* YConnectHttpParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectHttpParameters.h; sourceTree = "<group>"; };
+		13817BD51990E5950046F57D /* YConnectHttpParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectHttpParameters.m; sourceTree = "<group>"; };
+		13817BDF1990E5B00046F57D /* YConnectHttpClientTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectHttpClientTest.h; sourceTree = "<group>"; };
+		13817BE01990E5B00046F57D /* YConnectHttpClientTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectHttpClientTest.m; sourceTree = "<group>"; };
+		13817BE11990E5B00046F57D /* YConnectHttpHeadersTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectHttpHeadersTest.h; sourceTree = "<group>"; };
+		13817BE21990E5B00046F57D /* YConnectHttpHeadersTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectHttpHeadersTest.m; sourceTree = "<group>"; };
+		13817BE31990E5B00046F57D /* YConnectHttpParametersTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectHttpParametersTest.h; sourceTree = "<group>"; };
+		13817BE41990E5B00046F57D /* YConnectHttpParametersTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectHttpParametersTest.m; sourceTree = "<group>"; };
+		139A4A7619B4866300017E3D /* token_endpoint_refresh_success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = token_endpoint_refresh_success.json; sourceTree = "<group>"; };
+		139A4A7819B48AC800017E3D /* userinfo_endpoint_success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userinfo_endpoint_success.json; sourceTree = "<group>"; };
+		139CDA5F1768AF5F0054D3C1 /* YConnectUserInfoObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectUserInfoObject.h; sourceTree = "<group>"; };
+		139CDA601768AF5F0054D3C1 /* YConnectUserInfoObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectUserInfoObject.m; sourceTree = "<group>"; };
+		13D568781994EFF10038BFBD /* YConnectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectManager.h; sourceTree = "<group>"; };
+		13D568791994EFF10038BFBD /* YConnectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectManager.m; sourceTree = "<group>"; };
+		13D61D0E19933FB700B3B908 /* YConnectConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectConfig.h; sourceTree = "<group>"; };
+		13D61D0F19933FB700B3B908 /* YConnectConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectConfig.m; sourceTree = "<group>"; };
+		13D61D221993883900B3B908 /* YConnectTokenClientTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectTokenClientTest.m; sourceTree = "<group>"; };
+		13E6B1B019013DA3000AF8B3 /* YConnectErrorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectErrorTest.m; sourceTree = "<group>"; };
+		13F2338719B4552F00AD0868 /* libPods-YConnectTests-OCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-YConnectTests-OCMock.a"; path = "Pods/build/Debug-iphoneos/libPods-YConnectTests-OCMock.a"; sourceTree = "<group>"; };
+		13F2338819B4552F00AD0868 /* libPods-YConnectTests-OHHTTPStubs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-YConnectTests-OHHTTPStubs.a"; path = "Pods/build/Debug-iphoneos/libPods-YConnectTests-OHHTTPStubs.a"; sourceTree = "<group>"; };
+		13F2338919B4552F00AD0868 /* libPods-YConnectTests-TKRGuard.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-YConnectTests-TKRGuard.a"; path = "Pods/build/Debug-iphoneos/libPods-YConnectTests-TKRGuard.a"; sourceTree = "<group>"; };
+		13F2338D19B457C300AD0868 /* stub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stub.json; sourceTree = "<group>"; };
+		13F2339119B480C300AD0868 /* token_endpoint_success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = token_endpoint_success.json; sourceTree = "<group>"; };
+		13F2339319B4838700AD0868 /* token_endpoint_error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = token_endpoint_error.json; sourceTree = "<group>"; };
+		13F81BD318E0251900C7AEBC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1FF873D1D88C4AE69B4B8E34 /* libPods-YConnectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YConnectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8772E43E720C451E0034A449 /* Pods-YConnectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YConnectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YConnectTests/Pods-YConnectTests.release.xcconfig"; sourceTree = "<group>"; };
+		95A8FC57AB0A42A2E50CAD1F /* Pods-YConnectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YConnectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YConnectTests/Pods-YConnectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EBF834421A6F62CE00D8268C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBFA77991B6F742900FCF12C /* NSNull+isNull.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNull+isNull.h"; sourceTree = "<group>"; };
+		EC6E60441B9EEE12007246B1 /* YConnectLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectLog.m; sourceTree = "<group>"; };
+		F0DB22BB165368D10058A139 /* libYConnect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYConnect.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0DB22BE165368D10058A139 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F0DB22C2165368D10058A139 /* YConnect-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YConnect-Prefix.pch"; sourceTree = "<group>"; };
+		F0DB22C3165368D10058A139 /* YConnect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YConnect.h; sourceTree = "<group>"; };
+		F0DB22D1165368F20058A139 /* YConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YConnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0DB22D4165368F20058A139 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F0DB22D9165368F20058A139 /* YConnectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "YConnectTests-Info.plist"; path = "YConnectTests/YConnectTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F0DB22DB165368F20058A139 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F0DB22E0165368F20058A139 /* YConnectTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YConnectTests-Prefix.pch"; sourceTree = "<group>"; };
+		F0DB22E5165369560058A139 /* YConnectAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectAPIClient.h; sourceTree = "<group>"; };
+		F0DB22E6165369560058A139 /* YConnectAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectAPIClient.m; sourceTree = "<group>"; };
+		F0DB22F1165369560058A139 /* YConnectAuthorizationCallBackUriParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectAuthorizationCallBackUriParser.h; sourceTree = "<group>"; };
+		F0DB22F2165369560058A139 /* YConnectAuthorizationCallBackUriParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectAuthorizationCallBackUriParser.m; sourceTree = "<group>"; };
+		F0DB22F7165369560058A139 /* YConnectBearerToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectBearerToken.h; sourceTree = "<group>"; };
+		F0DB22F8165369560058A139 /* YConnectBearerToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YConnectBearerToken.m; path = oauth2/YConnectBearerToken.m; sourceTree = "<group>"; };
+		F0DB2302165369560058A139 /* YConnectCheckIdClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectCheckIdClient.h; sourceTree = "<group>"; };
+		F0DB2303165369560058A139 /* YConnectCheckIdClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectCheckIdClient.m; sourceTree = "<group>"; };
+		F0DB2308165369560058A139 /* YConnectIdTokenObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectIdTokenObject.h; sourceTree = "<group>"; };
+		F0DB2309165369560058A139 /* YConnectIdTokenObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectIdTokenObject.m; sourceTree = "<group>"; };
+		F0DB235916536A070058A139 /* YConnectAPIClientTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectAPIClientTest.h; sourceTree = "<group>"; };
+		F0DB235A16536A070058A139 /* YConnectAPIClientTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectAPIClientTest.m; sourceTree = "<group>"; };
+		F0DB236316536A070058A139 /* YConnectAuthorizationCallBackUriParserTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectAuthorizationCallBackUriParserTest.h; sourceTree = "<group>"; };
+		F0DB236416536A070058A139 /* YConnectAuthorizationCallBackUriParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectAuthorizationCallBackUriParserTest.m; sourceTree = "<group>"; };
+		F0DB236916536A070058A139 /* YConnectBearerTokenTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectBearerTokenTest.h; sourceTree = "<group>"; };
+		F0DB236A16536A070058A139 /* YConnectBearerTokenTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectBearerTokenTest.m; sourceTree = "<group>"; };
+		F0DB24461653700E0058A139 /* YConnectCheckIdClientTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectCheckIdClientTest.h; sourceTree = "<group>"; };
+		F0DB24471653700E0058A139 /* YConnectCheckIdClientTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectCheckIdClientTest.m; sourceTree = "<group>"; };
+		F0DB244C1653700E0058A139 /* YConnectIdTokenObjectTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YConnectIdTokenObjectTest.h; sourceTree = "<group>"; };
+		F0DB244D1653700E0058A139 /* YConnectIdTokenObjectTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YConnectIdTokenObjectTest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0DB22B8165368D10058A139 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0DB22BF165368D10058A139 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0DB22CD165368F20058A139 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13F81BD418E0251900C7AEBC /* XCTest.framework in Frameworks */,
+				F0DB253B165384EB0058A139 /* libYConnect.a in Frameworks */,
+				F0DB22D5165368F20058A139 /* UIKit.framework in Frameworks */,
+				F0DB22D6165368F20058A139 /* Foundation.framework in Frameworks */,
+				83DD0135FCC646C89D031F6A /* libPods-YConnectTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13817BC61990E52B0046F57D /* util */ = {
+			isa = PBXGroup;
+			children = (
+				13817BD01990E5950046F57D /* YConnectHttpClient.h */,
+				13817BD11990E5950046F57D /* YConnectHttpClient.m */,
+				13817BD21990E5950046F57D /* YConnectHttpHeaders.h */,
+				13817BD31990E5950046F57D /* YConnectHttpHeaders.m */,
+				13817BD41990E5950046F57D /* YConnectHttpParameters.h */,
+				13817BD51990E5950046F57D /* YConnectHttpParameters.m */,
+				13817BC41990E52B0046F57D /* YConnectStringUtil.h */,
+				13817BC51990E52B0046F57D /* YConnectStringUtil.m */,
+				EBFA77991B6F742900FCF12C /* NSNull+isNull.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		13817BCC1990E5580046F57D /* util */ = {
+			isa = PBXGroup;
+			children = (
+				13817BDF1990E5B00046F57D /* YConnectHttpClientTest.h */,
+				13817BE01990E5B00046F57D /* YConnectHttpClientTest.m */,
+				13817BE11990E5B00046F57D /* YConnectHttpHeadersTest.h */,
+				13817BE21990E5B00046F57D /* YConnectHttpHeadersTest.m */,
+				13817BE31990E5B00046F57D /* YConnectHttpParametersTest.h */,
+				13817BE41990E5B00046F57D /* YConnectHttpParametersTest.m */,
+				13817BCA1990E5580046F57D /* YConnectStringUtilTest.h */,
+				13817BCB1990E5580046F57D /* YConnectStringUtilTest.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		7BC77E2F9A3289950E1489E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95A8FC57AB0A42A2E50CAD1F /* Pods-YConnectTests.debug.xcconfig */,
+				8772E43E720C451E0034A449 /* Pods-YConnectTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EBF834411A6F622900D8268C /* YConnectResources */ = {
+			isa = PBXGroup;
+			children = (
+				EBF834421A6F62CE00D8268C /* Info.plist */,
+			);
+			path = YConnectResources;
+			sourceTree = "<group>";
+		};
+		F0DB22B0165368D10058A139 = {
+			isa = PBXGroup;
+			children = (
+				EBF834411A6F622900D8268C /* YConnectResources */,
+				F0DB22C0165368D10058A139 /* YConnect */,
+				F0DB22D7165368F20058A139 /* YConnectTests */,
+				F0DB22BD165368D10058A139 /* Frameworks */,
+				F0DB22BC165368D10058A139 /* Products */,
+				7BC77E2F9A3289950E1489E3 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F0DB22BC165368D10058A139 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0DB22BB165368D10058A139 /* libYConnect.a */,
+				F0DB22D1165368F20058A139 /* YConnectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0DB22BD165368D10058A139 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13F2338719B4552F00AD0868 /* libPods-YConnectTests-OCMock.a */,
+				13F2338819B4552F00AD0868 /* libPods-YConnectTests-OHHTTPStubs.a */,
+				13F2338919B4552F00AD0868 /* libPods-YConnectTests-TKRGuard.a */,
+				13F81BD318E0251900C7AEBC /* XCTest.framework */,
+				F0DB22BE165368D10058A139 /* Foundation.framework */,
+				F0DB22D4165368F20058A139 /* UIKit.framework */,
+				1FF873D1D88C4AE69B4B8E34 /* libPods-YConnectTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0DB22C0165368D10058A139 /* YConnect */ = {
+			isa = PBXGroup;
+			children = (
+				F0DB22C3165368D10058A139 /* YConnect.h */,
+				13817BC61990E52B0046F57D /* util */,
+				F0DB22E4165369560058A139 /* api */,
+				F0DB22F0165369560058A139 /* oauth2 */,
+				F0DB2301165369560058A139 /* oidc */,
+				F0DB2313165369560058A139 /* yconnect */,
+				F0DB22C1165368D10058A139 /* Supporting Files */,
+				1349A44F18FE96D300DD0A6D /* YConnectError.h */,
+				1317A1DC1A2CAB7800BD14F8 /* YConnectLog.h */,
+				1349A45018FE96D300DD0A6D /* YConnectError.m */,
+				F0DB22F8165369560058A139 /* YConnectBearerToken.m */,
+				EC6E60441B9EEE12007246B1 /* YConnectLog.m */,
+			);
+			path = YConnect;
+			sourceTree = "<group>";
+		};
+		F0DB22C1165368D10058A139 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0DB22C2165368D10058A139 /* YConnect-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0DB22D7165368F20058A139 /* YConnectTests */ = {
+			isa = PBXGroup;
+			children = (
+				13817BCC1990E5580046F57D /* util */,
+				F0DB24451653700E0058A139 /* oidc */,
+				F0DB235616536A070058A139 /* api */,
+				F0DB236216536A070058A139 /* oauth2 */,
+				F0DB237616536A070058A139 /* yconnect */,
+				F0DB22D8165368F20058A139 /* Supporting Files */,
+				13E6B1B019013DA3000AF8B3 /* YConnectErrorTest.m */,
+			);
+			path = YConnectTests;
+			sourceTree = "<group>";
+		};
+		F0DB22D8165368F20058A139 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0DB22D9165368F20058A139 /* YConnectTests-Info.plist */,
+				F0DB22DA165368F20058A139 /* InfoPlist.strings */,
+				F0DB22E0165368F20058A139 /* YConnectTests-Prefix.pch */,
+				13F2338D19B457C300AD0868 /* stub.json */,
+				13F2339119B480C300AD0868 /* token_endpoint_success.json */,
+				13F2339319B4838700AD0868 /* token_endpoint_error.json */,
+				139A4A7619B4866300017E3D /* token_endpoint_refresh_success.json */,
+				139A4A7819B48AC800017E3D /* userinfo_endpoint_success.json */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0DB22E4165369560058A139 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				F0DB22E5165369560058A139 /* YConnectAPIClient.h */,
+				F0DB22E6165369560058A139 /* YConnectAPIClient.m */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		F0DB22F0165369560058A139 /* oauth2 */ = {
+			isa = PBXGroup;
+			children = (
+				F0DB22F1165369560058A139 /* YConnectAuthorizationCallBackUriParser.h */,
+				F0DB22F2165369560058A139 /* YConnectAuthorizationCallBackUriParser.m */,
+				F0DB22F7165369560058A139 /* YConnectBearerToken.h */,
+				1304D8671767531A00B50D25 /* YConnectTokenClient.h */,
+				1304D8681767531A00B50D25 /* YConnectTokenClient.m */,
+			);
+			path = oauth2;
+			sourceTree = "<group>";
+		};
+		F0DB2301165369560058A139 /* oidc */ = {
+			isa = PBXGroup;
+			children = (
+				139CDA5F1768AF5F0054D3C1 /* YConnectUserInfoObject.h */,
+				139CDA601768AF5F0054D3C1 /* YConnectUserInfoObject.m */,
+				1304D85B176752EE00B50D25 /* YConnectUserInfoClient.h */,
+				1304D85C176752EE00B50D25 /* YConnectUserInfoClient.m */,
+				F0DB2302165369560058A139 /* YConnectCheckIdClient.h */,
+				F0DB2303165369560058A139 /* YConnectCheckIdClient.m */,
+				F0DB2308165369560058A139 /* YConnectIdTokenObject.h */,
+				F0DB2309165369560058A139 /* YConnectIdTokenObject.m */,
+			);
+			path = oidc;
+			sourceTree = "<group>";
+		};
+		F0DB2313165369560058A139 /* yconnect */ = {
+			isa = PBXGroup;
+			children = (
+				13D61D0E19933FB700B3B908 /* YConnectConfig.h */,
+				13D61D0F19933FB700B3B908 /* YConnectConfig.m */,
+				13D568781994EFF10038BFBD /* YConnectManager.h */,
+				13D568791994EFF10038BFBD /* YConnectManager.m */,
+			);
+			path = yconnect;
+			sourceTree = "<group>";
+		};
+		F0DB235616536A070058A139 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				F0DB235916536A070058A139 /* YConnectAPIClientTest.h */,
+				F0DB235A16536A070058A139 /* YConnectAPIClientTest.m */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		F0DB236216536A070058A139 /* oauth2 */ = {
+			isa = PBXGroup;
+			children = (
+				F0DB236316536A070058A139 /* YConnectAuthorizationCallBackUriParserTest.h */,
+				F0DB236416536A070058A139 /* YConnectAuthorizationCallBackUriParserTest.m */,
+				F0DB236916536A070058A139 /* YConnectBearerTokenTest.h */,
+				F0DB236A16536A070058A139 /* YConnectBearerTokenTest.m */,
+				133E820817995C0300EB28BD /* YConnectTokenClientTest.h */,
+				13D61D221993883900B3B908 /* YConnectTokenClientTest.m */,
+			);
+			path = oauth2;
+			sourceTree = "<group>";
+		};
+		F0DB237616536A070058A139 /* yconnect */ = {
+			isa = PBXGroup;
+			children = (
+				137DC3131999AA50002AC9D8 /* YConnectManagerTest.m */,
+			);
+			path = yconnect;
+			sourceTree = "<group>";
+		};
+		F0DB24451653700E0058A139 /* oidc */ = {
+			isa = PBXGroup;
+			children = (
+				F0DB24461653700E0058A139 /* YConnectCheckIdClientTest.h */,
+				F0DB24471653700E0058A139 /* YConnectCheckIdClientTest.m */,
+				F0DB244C1653700E0058A139 /* YConnectIdTokenObjectTest.h */,
+				F0DB244D1653700E0058A139 /* YConnectIdTokenObjectTest.m */,
+				136A35FC1798322700E4CB23 /* YConnectUserInfoObjectTest.h */,
+				136A35FD1798322700E4CB23 /* YConnectUserInfoObjectTest.m */,
+				136A36031798324100E4CB23 /* YConnectUserInfoClientTest.h */,
+				136A36041798324100E4CB23 /* YConnectUserInfoClientTest.m */,
+			);
+			path = oidc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F0DB242516536F150058A139 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0DB242F16536F2A0058A139 /* YConnect.h in Headers */,
+				13817BDA1990E5950046F57D /* YConnectHttpParameters.h in Headers */,
+				1349A45118FE96D300DD0A6D /* YConnectError.h in Headers */,
+				F0DB243216536F430058A139 /* YConnectAPIClient.h in Headers */,
+				F0DB243716536F610058A139 /* YConnectAuthorizationCallBackUriParser.h in Headers */,
+				13817BD81990E5950046F57D /* YConnectHttpHeaders.h in Headers */,
+				13817BC71990E52B0046F57D /* YConnectStringUtil.h in Headers */,
+				13D61D1019933FB700B3B908 /* YConnectConfig.h in Headers */,
+				13D5687A1994EFF10038BFBD /* YConnectManager.h in Headers */,
+				F0DB243A16536F610058A139 /* YConnectBearerToken.h in Headers */,
+				13817BD61990E5950046F57D /* YConnectHttpClient.h in Headers */,
+				F0DB243016536F310058A139 /* YConnectCheckIdClient.h in Headers */,
+				F0DB244016536F610058A139 /* YConnectIdTokenObject.h in Headers */,
+				1304D85F176752EE00B50D25 /* YConnectUserInfoClient.h in Headers */,
+				1304D8711767531A00B50D25 /* YConnectTokenClient.h in Headers */,
+				139CDA611768AF5F0054D3C1 /* YConnectUserInfoObject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F0DB22BA165368D10058A139 /* YConnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0DB22C9165368D10058A139 /* Build configuration list for PBXNativeTarget "YConnect" */;
+			buildPhases = (
+				F0DB22B7165368D10058A139 /* Sources */,
+				F0DB22B8165368D10058A139 /* Frameworks */,
+				F0DB22B9165368D10058A139 /* CopyFiles */,
+				F0DB242516536F150058A139 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YConnect;
+			productName = YConnect;
+			productReference = F0DB22BB165368D10058A139 /* libYConnect.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F0DB22D0165368F20058A139 /* YConnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0DB22E1165368F20058A139 /* Build configuration list for PBXNativeTarget "YConnectTests" */;
+			buildPhases = (
+				5668E0A8765742BB8B0D8299 /* Check Pods Manifest.lock */,
+				F0DB22CC165368F20058A139 /* Sources */,
+				F0DB22CD165368F20058A139 /* Frameworks */,
+				F0DB22CE165368F20058A139 /* Resources */,
+				F0DB22CF165368F20058A139 /* ShellScript */,
+				0BC63EC5AFBB404DA1D31716 /* Copy Pods Resources */,
+				5BBD39F083ED6DF6AE2B8E5F /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0DB253216537F8F0058A139 /* PBXTargetDependency */,
+			);
+			name = YConnectTests;
+			productName = YConnectTests;
+			productReference = F0DB22D1165368F20058A139 /* YConnectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0DB22B2165368D10058A139 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YConnect;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Yahoo Japan Corporation";
+			};
+			buildConfigurationList = F0DB22B5165368D10058A139 /* Build configuration list for PBXProject "YConnect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F0DB22B0165368D10058A139;
+			productRefGroup = F0DB22BC165368D10058A139 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0DB22BA165368D10058A139 /* YConnect */,
+				F0DB22D0165368F20058A139 /* YConnectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0DB22CE165368F20058A139 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				139A4A7719B4866300017E3D /* token_endpoint_refresh_success.json in Resources */,
+				13F2339219B480C300AD0868 /* token_endpoint_success.json in Resources */,
+				13F2338E19B457C300AD0868 /* stub.json in Resources */,
+				F0DB22DC165368F20058A139 /* InfoPlist.strings in Resources */,
+				13F2339419B4838700AD0868 /* token_endpoint_error.json in Resources */,
+				139A4A7919B48AC800017E3D /* userinfo_endpoint_success.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BC63EC5AFBB404DA1D31716 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YConnectTests/Pods-YConnectTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5668E0A8765742BB8B0D8299 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5BBD39F083ED6DF6AE2B8E5F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YConnectTests/Pods-YConnectTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0DB22CF165368F20058A139 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n# \"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0DB22B7165368D10058A139 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0DB2316165369560058A139 /* YConnectAPIClient.m in Sources */,
+				13817BD71990E5950046F57D /* YConnectHttpClient.m in Sources */,
+				F0DB2320165369560058A139 /* YConnectAuthorizationCallBackUriParser.m in Sources */,
+				1349A45218FE96D300DD0A6D /* YConnectError.m in Sources */,
+				F0DB2326165369560058A139 /* YConnectBearerToken.m in Sources */,
+				13817BDB1990E5950046F57D /* YConnectHttpParameters.m in Sources */,
+				F0DB2330165369560058A139 /* YConnectCheckIdClient.m in Sources */,
+				13D61D1119933FB700B3B908 /* YConnectConfig.m in Sources */,
+				F0DB2336165369560058A139 /* YConnectIdTokenObject.m in Sources */,
+				1304D860176752EE00B50D25 /* YConnectUserInfoClient.m in Sources */,
+				13817BD91990E5950046F57D /* YConnectHttpHeaders.m in Sources */,
+				13D5687B1994EFF10038BFBD /* YConnectManager.m in Sources */,
+				1304D8721767531A00B50D25 /* YConnectTokenClient.m in Sources */,
+				EC6E60451B9EEE12007246B1 /* YConnectLog.m in Sources */,
+				13817BC81990E52B0046F57D /* YConnectStringUtil.m in Sources */,
+				139CDA621768AF5F0054D3C1 /* YConnectUserInfoObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0DB22CC165368F20058A139 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0DB237A16536A070058A139 /* YConnectAPIClientTest.m in Sources */,
+				F0DB237E16536A070058A139 /* YConnectAuthorizationCallBackUriParserTest.m in Sources */,
+				13817BE61990E5B00046F57D /* YConnectHttpHeadersTest.m in Sources */,
+				F0DB238116536A070058A139 /* YConnectBearerTokenTest.m in Sources */,
+				F0DB24541653700E0058A139 /* YConnectCheckIdClientTest.m in Sources */,
+				13817BCD1990E5580046F57D /* YConnectStringUtilTest.m in Sources */,
+				13817BE71990E5B00046F57D /* YConnectHttpParametersTest.m in Sources */,
+				F0DB24571653700E0058A139 /* YConnectIdTokenObjectTest.m in Sources */,
+				13D61D231993883900B3B908 /* YConnectTokenClientTest.m in Sources */,
+				136A35FE1798322700E4CB23 /* YConnectUserInfoObjectTest.m in Sources */,
+				136A36051798324100E4CB23 /* YConnectUserInfoClientTest.m in Sources */,
+				13E6B1B119013DA3000AF8B3 /* YConnectErrorTest.m in Sources */,
+				137DC3141999AA50002AC9D8 /* YConnectManagerTest.m in Sources */,
+				13817BE51990E5B00046F57D /* YConnectHttpClientTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0DB253216537F8F0058A139 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0DB22BA165368D10058A139 /* YConnect */;
+			targetProxy = F0DB253116537F8F0058A139 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0DB22DA165368F20058A139 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0DB22DB165368F20058A139 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0DB22C7165368D10058A139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		F0DB22C8165368D10058A139 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0DB22CA165368D10058A139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/YConnect.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YConnect/YConnect-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME)";
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		F0DB22CB165368D10058A139 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/YConnect.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YConnect/YConnect-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F0DB22E2165368F20058A139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95A8FC57AB0A42A2E50CAD1F /* Pods-YConnectTests.debug.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YConnectTests/YConnectTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YConnectTests/YConnectTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F0DB22E3165368F20058A139 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8772E43E720C451E0034A449 /* Pods-YConnectTests.release.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YConnectTests/YConnectTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YConnectTests/YConnectTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0DB22B5165368D10058A139 /* Build configuration list for PBXProject "YConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0DB22C7165368D10058A139 /* Debug */,
+				F0DB22C8165368D10058A139 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0DB22C9165368D10058A139 /* Build configuration list for PBXNativeTarget "YConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0DB22CA165368D10058A139 /* Debug */,
+				F0DB22CB165368D10058A139 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0DB22E1165368F20058A139 /* Build configuration list for PBXNativeTarget "YConnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0DB22E2165368F20058A139 /* Debug */,
+				F0DB22E3165368F20058A139 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0DB22B2165368D10058A139 /* Project object */;
+}

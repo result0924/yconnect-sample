@@ -1,0 +1,23 @@
+{
+    "user_id":"chkminiyj_yconnect_ios_test1",
+    "locale":"ja_JP",
+    "name":"矢風太郎",
+    "given_name":"太郎",
+    "given_name#ja-Kana-JP":"タロウ",
+    "given_name#ja-Hani-JP":"太郎",
+    "family_name":"矢風",
+    "family_name#ja-Kana-JP":"ヤフウ",
+    "family_name#ja-Hani-JP":"矢風",
+    "email":"yahootaro@example.com",
+    "email_verified":"true",
+    "gender":"male",
+    "birthday":"01/01/1970",
+    "address":{
+        "country":"jp",
+        "postal_code":"1076211",
+        "region":"東京都",
+        "locality":"港区",
+        "street_address":"赤坂９丁目７-1"
+    },
+    "phone_number":"0364406000"
+}
