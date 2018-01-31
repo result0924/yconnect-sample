@@ -16,19 +16,6 @@
 	<string>yj-xxxxx:/</string>
 	<key>YConnectClientId</key>
 	<string>abcdefghijklmnopq</string>
-    <array>
-        <dict>
-            <key>CFBundleTypeRole</key>
-            <string>Editor</string>
-            <key>CFBundleURLName</key>
-            <string>${PRODUCT_NAME:rfc1034identifier}</string>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>yj-xxxxx</string>
-            </array>
-        </dict>
-    </array>
-    
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
