@@ -43,6 +43,7 @@
                 // Access Token、ID Tokenを取得
                 NSString *accessToken = [yconnect accessTokenString];
                 NSString *idToken = [yconnect hybridIdtoken];
+                NSLog(@"accessToken:%@ idToken:%@", accessToken, idToken);
                 
                 [yconnect fetchUserInfo:accessToken handler:^(YConnectUserInfoObject *userInfoObject, NSError *error) {
                     // エラーハンドリング
@@ -52,8 +53,9 @@
                     
                     // UserInfo情報からユーザー識別子を取得
                     NSString *userid = yconnect.userInfoObject.sub;
-                    NSLog(@"%@", yconnect.userInfoObject);
-                    NSLog(@"%@", yconnect.userInfoObject.email);
+                    NSLog(@"userid:%@", userid);
+                    NSLog(@"info:%@", yconnect.userInfoObject);
+                    NSLog(@"email:%@", yconnect.userInfoObject.email);
                     
                     // Name 相關資訊有機會會沒有
                     //{"sub":"NL6GVFYWBWUJRRBMTEXQSYOWKI","name":"WangHank","given_name":"Hank","given_name#ja-Hani-JP":"Hank","family_name":"Wang","family_name#ja-Hani-JP":"Wang","gender":"male","locale":"ja-JP","email":"hanksudo@yahoo.co.jp","email_verified":true,"birthdate":"1985","zoneinfo":"Asia\/Tokyo","nickname":"\u30aa\u30a6 \u30ab\u30f3 \u30d2\u30ed","picture":"https:\/\/s.yimg.jp\/images\/account\/sp\/img\/display_name\/user\/512\/02.png"}
